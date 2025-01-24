@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NTAI - #1 Open Source AI Notes Utility</title>
+    <meta content="A Powerful Note Taking Experience" property="og:description">
+    <meta content="meow" property="og:url">
+    <link rel="icon" type="png" href="images/ntailogo.png">
+    <script async="" src="js/adsbygoogle.js" crossorigin="anonymous"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+        :root {
+            --background: #0f0f0f;
+            --text: #ffffff;
+            --accent: #f988ea;
+            --button: #c26bb6;
+        }
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Inter', sans-serif;
+            background-color: var(--background);
+            color: var(--text);
+            height: 100%;
+            overflow: hidden;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+        header {
+            padding: 1rem 2rem;
+            background-color: rgba(15, 15, 15, 0.8);
+            backdrop-filter: blur(5px);
+            position: relative;
+        }
+        header img {
+            position: absolute;
+            right: 20px;
+            top: 10px;
+            height: 50px; /* Adjust height as needed */
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+        nav ul li {
+            margin-right: 1.5rem;
+        }
+        nav ul li a {
+            color: var(--text);
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: color 0.3s ease;
+            position: relative;
+            padding-bottom: 5px;
+        }
+        nav ul li a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: var(--accent);
+            transition: width 0.3s ease;
+        }
+        nav ul li a:hover::after {
+            width: 100%;
+        }
+        .hero {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 2rem;
+            background: radial-gradient(circle at center, rgba(176, 136, 249, 0.2) 0%, rgba(15, 15, 15, 0) 60%), url('images/bg.gif');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+        .hero h1 {
+            font-size: 3.5rem;
+            margin: 0;
+            color: var(--accent);
+            line-height: 1.2;
+            animation: fadeInUp 0.8s ease-out;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            margin: 1rem 0 1.5rem;
+            color: #cccccc;
+            animation: fadeInUp 0.8s ease-out 0.2s backwards;
+        }
+        .cta-button {
+            display: inline-block;
+            background-color: var(--button);
+            color: var(--text);
+            padding: 1rem 2rem;
+            text-decoration: none;
+            border-radius: 1px;
+            font-size: 1rem;
+            font-weight: 600;
+            transition: transform 0.3s ease;
+            animation: slideIn 0.5s forwards; /* Slide in animation */
+            transform: translateY(20px); /* Start below */
+        }
+        .cta-button:hover {
+            transform: scale(1.1); /* Grow on hover */
+        }
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="images/ntailogo.png" alt="NTAI Logo">
+            <nav>
+                <ul>
+                    <li><a href="/home">Home</a></li>
+                    <li><a href="/windows">Windows</a></li>
+                    <li><a href="/linux">Linux</a></li>
+                    <li><a href="https://docs.google.com/document/d/10iWgQkEtcspLqxpx0G5_kcCDT4SRLR0oj7Ox32nWLZk/edit?usp=sharing">Documentation</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="hero">
+            <h1>A Empowering<br>Notation Experience</h1>
+            <p>Where AI intersects with workflow</p>
+            <a class="cta-button" href="https://docs.google.com/document/d/10iWgQkEtcspLqxpx0G5_kcCDT4SRLR0oj7Ox32nWLZk/edit?usp=sharing">View Documentation</a>
+        </main>
+    </div>
+    <script async="" src="js/adsbygoogle.js" crossorigin="anonymous"></script>
+    <!-- Home Ads -->
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-3006313115170056" data-ad-slot="5854973275" data-ad-format="auto" data-full-width-responsive="true"></ins>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+</body>
+</html>
